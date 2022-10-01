@@ -1,0 +1,477 @@
+body {
+    font-family: Arial;
+    background: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+}
+.banner {
+    width: 100%;
+    margin: 0 auto;
+    height: 60px;
+    image-resolution: from-image;
+    font-size: 48px;
+    text-align: center;
+    color: white;
+    background-image: url("banner.png");
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}
+.menu {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+.menu li {
+    display:block;
+    border-radius: 5px;
+    width: 100%;
+    float:left;
+    height: 35px;
+    text-align: center;
+    list-style: circle;
+    list-style: '';
+    font-size: 16px;
+}
+.menu a {
+    display:block;
+    padding:3px;
+    text-decoration:none;
+    color:#009;
+}
+.menu li:hover {
+    box-shadow: 0px 0px 20px blue;
+    background-color: #2b65ec;
+}
+.logo {
+    height: 100% ;
+    width: 100% ;
+}
+.logo img {
+    width: 30%;
+    height: 85%;
+    padding: 0;
+}
+
+#main-heading {
+    width: 100%;
+    margin: 10px 1% 0 1%;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: "Segoe MDL2 Assets";
+    background-color: #87afc7;
+    color: black;
+}
+
+.main_content {
+    float: left;
+    display: inline;
+    width: 65%;
+    margin: 1%;
+}
+
+#task h2 {
+    text-align: center;
+    color: #151b54;
+}
+
+@media (min-width: 40rem) {
+    img {
+       float: left;
+       padding: 1rem;
+       max-width: 50%;
+       margin: 0 0 1rem 1rem;
+    }
+}
+
+
+#requirements {
+    margin: 3rem 0;
+    clear: both;
+}
+
+#requirements h2 {
+    text-align: center;
+    color: #151b54;
+}
+
+#submission {
+    float: left;
+    display: grid;
+    width: 45%;
+    height: 100%;
+}
+
+#submission h2, h3 {
+    text-align: center;
+    color: #151b54;
+}
+
+#submission img {
+    width: 100%;
+    height: 60%;
+    margin: 0;
+}
+#grading {
+    float: right;    
+    display: grid;
+    width: 45%;
+    height: 100%;
+}
+
+#grading h2 {
+    text-align: center;
+    color: #151b54;
+}
+
+aside {
+    float: left;
+    display: grid;
+    width: 25%;
+    margin: 1%;
+    background-color: #87afc7;
+    padding-left: 20px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: lightsteelblue;
+    width: 100%;
+}
+footer .contacts {
+     text-align: center;
+}
+.categories li {
+    display:block;
+    border-radius: 5px;
+    width: 100%;
+    float:left;
+    margin: 10px;
+    height: 20px;
+    text-align: center;
+    list-style: circle;
+    list-style: '';
+    font-size: 15px;
+}
+.categories a {
+    display:block;
+    padding:3px;
+    text-decoration:none;
+    color:#009;
+}
+.quick_links li {
+    display:block;
+    border-radius: 5px;
+    width: 100%;
+    float:left;
+    margin: 10px;
+    height: 20px;
+    text-align: center;
+    list-style: circle;
+    list-style: '';
+    font-size: 15px;
+}
+.quick_links a {
+    display:block;
+    padding:3px;
+    text-decoration:none;
+    color:#009;
+}
+
+footer .contacts h5, .categories h5, .quick_links h5 {
+     text-align: center;
+     font-size: 16px;
+}
+
+@media (min-width: 300px) and (max-width: 767px){
+    nav {
+        height: auto;
+        display: inline;
+        margin: 0;
+        width: 100%;
+        align-content: center;
+    }
+    nav .logo {
+        width: 100% ;
+        position: relative;
+        margin: 0;
+        alignment: center;
+        align-content: center;
+    }
+    .logo img {
+        padding: 0;
+        alignment: center;
+    }
+    nav .menu {
+        display: inline;
+        width: 100%;
+        position: relative;
+        margin: 0;
+    }
+    .menu li {
+        display:inline;
+        position: relative;
+        border-radius: 5px;
+        width: 100%;
+        text-align: center;
+        list-style: '';
+        font-size: 16px;
+        margin: 0;
+    }
+    .menu li a {
+        display:block;
+        padding:3px;
+        text-decoration:none;
+        color:#009;
+        margin: 0;
+    }
+    .main_content {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    aside {
+        display: block;
+        width: 100%;
+        background-color: #87afc7;
+        padding-left: 20px;
+    }
+    footer {
+        display: grid;
+        position: relative;
+        grid-template-columns: 1fr;
+        background-color: lightsteelblue;
+        height: auto;
+        width: 100%;
+    }
+    #requirements {
+        display: block;
+        margin: 0;
+    }
+    header {
+        width: 100%;
+        display: block;
+    }
+    #main-heading {
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 10px;
+        font-family: "Segoe MDL2 Assets";
+        background-color: #87afc7;
+        color: black;
+    }
+    .banner {
+        width: 100%;
+        margin: 0;
+        height: 60px;
+        image-resolution: from-image;
+        font-size: 24px;
+        text-align: center;
+        color: white;
+        background-image: url("banner.png");
+    }
+    img {
+        display: block;
+    }
+    .categories li {
+        display:block;
+        border-radius: 5px;
+        width: 100%;
+        float:left;
+        height: 20px;
+        text-align: center;
+        list-style: circle;
+        list-style: '';
+        font-size: 15px;
+    }
+    footer .contacts {
+        display: block;
+        position: relative;
+    }
+    #grading {
+        width: 100%;
+        display: block;
+        alignment: center;
+    }
+    #grading table {
+        width: 100%;
+        align-content: center;
+    }
+    #grading table tr {
+        width: 100%;
+    }
+    #grading table tr td {
+        width: 100%;
+        text-align: center;
+    }
+    #submission {
+        width: 100%;
+    }
+    .quick_links li {
+        display:block;
+        border-radius: 5px;
+        width: 100%;
+        float:left;
+        margin: 0;
+        height: 20px;
+        text-align: center;
+        list-style: circle;
+        list-style: '';
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1200px){
+    #grading {
+        width: 100%;
+        display: block;
+        alignment: center;
+    }
+    #grading table {
+        width: 100%;
+        align-content: center;
+    }
+    #grading table tr {
+        width: 100%;
+    }
+    #grading table tr td {
+        width: 100%;
+        text-align: center;
+    }
+    #submission {
+        width: 100%;
+    }
+    footer .contacts {
+        display: block;
+        position: relative;
+    }
+    nav {
+        height: auto;
+        display: inline;
+        margin: 0;
+        width: 100%;
+        align-content: center;
+    }
+    nav .logo {
+        width: 100% ;
+        position: relative;
+        margin: 0;
+        alignment: center;
+        align-content: center;
+    }
+    .logo img {
+        padding: 0;
+        alignment: center;
+    }
+    nav .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        position: relative;
+        margin: 0;
+    }
+    .menu li {
+        display:inline;
+        position: relative;
+        border-radius: 5px;
+        width: 100%;
+        text-align: center;
+        list-style: '';
+        font-size: 16px;
+        margin: 0;
+    }
+    .menu li a {
+        display:block;
+        padding:3px;
+        text-decoration:none;
+        color:#009;
+        margin: 0;
+    }
+    .main_content {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    aside {
+        display: block;
+        width: 100%;
+        background-color: #87afc7;
+        padding-left: 20px;
+    }
+    footer {
+        display: grid;
+        position: relative;
+        grid-template-columns: 1fr 1fr;
+        background-color: lightsteelblue;
+        height: auto;
+        width: 100%;
+    }
+    #requirements {
+        display: block;
+        margin: 0;
+    }
+    header {
+        width: 100%;
+        display: block;
+    }
+    #main-heading {
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 10px;
+        font-family: "Segoe MDL2 Assets";
+        background-color: #87afc7;
+        color: black;
+    }
+    .banner {
+        width: 100%;
+        margin: 0;
+        height: 60px;
+        image-resolution: from-image;
+        font-size: 24px;
+        text-align: center;
+        color: white;
+        background-image: url("banner.png");
+    }
+    img {
+        display: block;
+    }
+    .categories li {
+        display:block;
+        border-radius: 5px;
+        width: 100%;
+        float:left;
+        height: 20px;
+        text-align: center;
+        list-style: circle;
+        list-style: '';
+        font-size: 15px;
+    }
+    .quick_links li {
+        display:block;
+        border-radius: 5px;
+        width: 100%;
+        float:left;
+        margin: 10px;
+        height: 20px;
+        text-align: center;
+        list-style: circle;
+        list-style: '';
+        font-size: 15px;
+    }
+}
