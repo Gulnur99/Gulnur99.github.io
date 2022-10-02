@@ -53,14 +53,15 @@ nav {
     background-color: #2b65ec;
 }
 .logo {
-    height: 100% ;
-    width: 100% ;
+    height: 50px ;
+    width: 50px ;
 }
 .logo img {
-    width: 30%;
-    height: 85%;
+    width: 100%;
+    height: 100%;
     padding: 0;
 }
+
 
 #main-heading {
     width: 100%;
@@ -195,27 +196,42 @@ footer .contacts h5, .categories h5, .quick_links h5 {
      font-size: 16px;
 }
 
+#menu-toggle {
+    position: fixed;
+    display: none;
+}
+.container {
+    display: none;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
 @media (min-width: 300px) and (max-width: 767px){
     nav {
         height: auto;
-        display: inline;
+        display: flex;
+        flex-direction: row;
         margin: 0;
         width: 100%;
         align-content: center;
     }
-    nav .logo {
-        width: 100% ;
+
+    nav .menu {
+        display: none;
+        width: 100%;
         position: relative;
         margin: 0;
-        alignment: center;
-        align-content: center;
     }
-    .logo img {
-        padding: 0;
-        alignment: center;
-    }
-    nav .menu {
-        display: inline;
+    #menu-toggle:checked ~ .menu {
+        display: flex;
+        flex-direction: column;
         width: 100%;
         position: relative;
         margin: 0;
@@ -333,9 +349,18 @@ footer .contacts h5, .categories h5, .quick_links h5 {
         list-style: '';
         font-size: 15px;
     }
+    .container {
+        display: block;
+        cursor: pointer;
+    }
 }
 
+
 @media (min-width: 767px) and (max-width: 1200px){
+    .container {
+        display: inline-block;
+        cursor: pointer;
+    }
     #grading {
         width: 100%;
         display: block;
@@ -361,29 +386,27 @@ footer .contacts h5, .categories h5, .quick_links h5 {
     }
     nav {
         height: auto;
-        display: inline;
+        display: flex;
+        flex-direction: row;
         margin: 0;
         width: 100%;
         align-content: center;
     }
-    nav .logo {
-        width: 100% ;
+
+    nav .menu {
+        display: none;
+        width: 100%;
         position: relative;
         margin: 0;
-        alignment: center;
-        align-content: center;
     }
-    .logo img {
-        padding: 0;
-        alignment: center;
-    }
-    nav .menu {
+    #menu-toggle:checked ~ .menu {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
         position: relative;
         margin: 0;
     }
+
     .menu li {
         display:inline;
         position: relative;
