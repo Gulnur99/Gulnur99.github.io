@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ACHIEVEMENTS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="dropdown">
+        <a class="hm" href="index.html">
+            <div class="dropdiv">HOME</div>
+        </a>
+    </div>
+    <div class="dropdown">
+        <a class="hm" href="achievements.html">
+            <div class="dropdiv">ACHIEVEMENTS</div>
+        </a>
+    </div>
+    <div class="soc-links">
+        <a target="_blank" href="https://www.instagram.com/g.s_person"><img class="soc-icon icon-instargam" src="icons/insta_off.svg"></a>
+        <a target="_blank" href="https://t.me/tamadatai"><img class="soc-icon icon-telegram" src="icons/telegram_off.svg"></a>
+        <a target="_blank" href="https://vk.com/idgulya2304"><img class="soc-icon icon-vk" src="icons/vk_off.svg"></a>
+        <a target="_blank" href="https://facebook.com"><img class="soc-icon icon-facebook" src="icons/fb_off.svg"></a>
+    </div>
+</header>
+
+<div class="content-body">
+    <aside>
+        <div class="aside-info">
+            <div class="profile-img-container">
+                <div class="pofile-img"></div>
+            </div>
+            <div>
+                <p style="text-align: center;font-size: 1.5em">Gulnur Suleimenova</p>
+            </div>
+            <div>
+                <div class="contacts">
+                    <span style="color: white">Phone</span>
+                    <span>8-707-17-37-550</span>
+                    <span>8-708-257-39-82</span>
+                </div>
+                <div class="contacts">
+                    <span style="color: white">Email</span>
+                    <span>Gulnur.kst@gmail.com</span>
+                    <span>Gulnur.suleimenova@nu.edu.kz</span>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div style="align-items: center;width: 100%">
+            <div id="menuToggle">
+                <input id="toggleButton" type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div></div>
+            </div>
+        </div>
+        <div id="menu">
+            <a class="menu-a-item" href="index.html#about-me">About me</a>
+            <a class="menu-a-item" href="#education">Education</a>
+            <a class="menu-a-item" href="#experience">Work experience</a>
+            <a class="menu-a-item" href="index.html#skills">Skills</a>
+            <a class="menu-a-item" href="#transcript-but">Transcript</a>
+        </div>
+    </aside>
+    <content>
+        <div class="content-inner">
+            <div class="display-grid grid-50-50">
+                <div>
+                    <h1 id="education">Education</h1>
+                    <div style="display: grid;grid-template-columns: 1fr">
+                        <div>
+                            <span><b>Nazarbayev Intellectual School of Physics and Mathematics, Kostanay</b></span>
+                        </div>
+                        <div>
+                            <span class="edu-date">2015-2018</span>
+                        </div>
+                        <div>
+                            <ul style="list-style-type: '✔'">
+                                <li>
+                                    Certificate of IELTS 6.5
+                                </li>
+                                <li>
+                                    Cambridge International Council Exam A/A*/A* in Mathematics, Chemistry and Biology
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="edu-hr">
+                    <div style="display: grid;grid-template-columns: 1fr">
+                        <div>
+                            <span><b>Nazarbayev University</b></span>
+                        </div>
+                        <div>
+                            <span class="edu-date">2018-2019</span>
+                        </div>
+                        <div>
+                            <span>Student of the pre-university program "Foundation"</span>
+                        </div>
+                    </div>
+                    <hr class="edu-hr">
+                    <div style="display: grid;grid-template-columns: 1fr">
+
+                        <div>
+                            <span><b>Nazarbayev University</b></span>
+                        </div>
+                        <div>
+                            <span class="edu-date">2019-...</span>
+                        </div>
+                        <div>
+                            <span>Faculty "School of Natural Social Sciences and Humanities", specialty "Biology"</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1 id="experience">Work experience</h1>
+                    <div style="display: grid;grid-template-columns: 1fr">
+                        <div>
+                            <span><b>Math Tutor</b></span>
+                        </div>
+                        <div>
+                            <span class="edu-date">2017-2018</span>
+                        </div>
+                        <div>
+                            <span>Taught math to 9 students at home</span>
+                        </div>
+                    </div>
+                    <hr class="edu-hr">
+                    <div style="display: grid;grid-template-columns: 1fr">
+
+
+                        <div>
+                            <span><b>Tutor of Mathematics</b></span>
+                        </div>
+                        <div>
+                            <span class="edu-date">2018-2019</span>
+                        </div>
+                        <div>
+                            <span>Volunteer tutor for students of the pre-university program "Foundation" organized by the student administration.</span>
+                        </div>
+                    </div>
+                    <hr class="edu-hr">
+                    <div style="display: grid;grid-template-columns: 1fr">
+
+
+                        <div>
+                            <span><b>Tutor of English and Mathematics</b></span>
+                        </div>
+                        <div>
+                            <span class="edu-date">2021-2022</span>
+                        </div>
+                        <div>
+                            <span>Volunteer teacher for children from low-income families, organized by the student organization NU Red Crescent Society, as part of the IHelper project.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 100%;display: flex;flex-direction: column;flex-wrap: wrap">
+                <br>
+                <button style="cursor: pointer" onclick="transcipt()" id="transcript-but">Transcript</button>
+                <!--      <iframe src="student_transcript.pdf" width="100%" height="1000px"></iframe>-->
+                <object id="transcript" data='student_transcript.pdf' width="100%" height="0px">
+                    <p>Oops! Your browser doesn't support PDFs!</p>
+                    <p><a href="student_transcript.pdf">Download Instead</a></p>
+                </object>
+            </div>
+        </div>
+    </content>
+</div>
+<div class="footer">
+    <br>
+    <div style="height: 120px">
+        <span>Gulnur Suleimenova </span>
+        <hr style="margin: 0">
+        <span>Biologist</span>
+    </div>
+
+    <a style="margin-left: auto;height: 120px" href="https://github.com/gulnur99" target="_blank">
+        <img src="GitHub-Mark-Light-120px-plus.png" alt="">
+    </a>
+</div>
+<script src="main.js"></script>
+
+</body>
+</html>
